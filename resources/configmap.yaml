@@ -1,0 +1,13 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: index-html-configmap
+  namespace: default
+data:
+  index.html: |
+    <html>
+    <h1>Welcome to TD data platform</h1>
+    </br>
+    <h1>Hi! This is a configmap Index file </h1>
+    </html
