@@ -1,20 +1,21 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: backend-deployment
   labels:
-    app: nginx
+    app: backend
 spec:
   selector:
     matchLabels:
-      app: nginx
+      app: backend
   replicas: 5
   strategy:
     type: RollingUpdate
   template:
     metadata:
       labels:
-        app: nginx
+        app: backend
     spec:
       volumes:
         - name: nginx-index-file
