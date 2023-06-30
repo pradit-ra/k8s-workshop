@@ -2,7 +2,7 @@
 kubectl get nodes -o wide
 
 # List all vm node instances
-kubectl ps nodes
+kubectl top nodes
 
 # See resource usages of nodes. This require metric-server installed into the cluster
 kubens kube-system

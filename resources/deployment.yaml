@@ -17,8 +17,8 @@ spec:
         app: backend
     spec:
       containers:
-        - name: backend
-          image: backend
+        - name: nginx
+          image: nginx:1.14.2
           # how much resource will be assinged into each running pod
           resources:
             limits:

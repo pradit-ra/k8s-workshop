@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 # create configmap contains static html page
-kubectl apply -f ../configmap.yaml
+kubectl apply -f ../resources/configmap.yaml
 
 # Re apply deployment that mount config map as volume
-kubectl apply -f ../deployment-cm.yaml
+kubectl apply -f ../resources/deployment-cm.yaml
 
 # you can port forward seeing the page content has been changed!
 
